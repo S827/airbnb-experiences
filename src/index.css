@@ -3,6 +3,7 @@
 }
 body {
   margin: 0;
+  font-family: Poppins, sans-serif;
 }
 nav {
   height: 70px;
@@ -13,4 +14,22 @@ nav {
 
 .nav--logo {
   max-width: 100px;
+}
+section {
+  padding: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+.hero-img {
+  max-width: 400px;
+  align-self: center;
+}
+.hero-heading {
+  margin-bottom: 16px;
+}
+.hero-content {
+  margin-top: 0;
 }
