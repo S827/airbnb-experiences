@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom'
 import Navbar from './components/navbar'
 import Hero from './components/hero'
 import TCard from './components/card'
-// import Card from './components/tempcard'
 import Data from './data'
 
 export default function App() {
-    const nn = Data.map(item => {
+    const cards = Data.map(item => {
       return <TCard 
+        key={item.id}
         img={item.coverImg}
         title={item.title} 
         rating={item.stats.rating}
@@ -21,7 +21,9 @@ export default function App() {
     <div>
       <Navbar />
       <Hero />
-      {nn}
+      <section className='cards-list'>
+        {cards} 
+      </section>
     </div>
   )
 }
