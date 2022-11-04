@@ -8,13 +8,13 @@ export default function Card(props) {
     const Katie = '../images'
     return (
         <div className='card'>
-            <img src={`${Katie}/${props.img}`} />
+            <img src={`images/${props.img}`} />
             {/* <h1>Hello</h1> */}
             <div>
                 <img src={Star} />
                 <span className=''>{props.rating}</span>
-                <span className='gray'>{props.reviewCount}</span>
-                <span className='gray'>{props.location}</span>
+                <span className='gray'>({props.reviewCount})</span>
+                <span className='gray'> .{props.location}</span>
             </div>
             <p>{props.title}</p>
             <p><span className='bold'>From ${props.price}</span> / person</p>
