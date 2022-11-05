@@ -9,7 +9,7 @@ export default function App() {
     const cards = Data.map(item => {
       return <TCard 
         key={item.id}
-        item={item}
+        {...item}
       />
     })
   return (
